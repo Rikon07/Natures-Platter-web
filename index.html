@@ -39,6 +39,7 @@
                 <!-- Logos -->
                 <img class="hidden lg:block" src="./Images/logo-header.png" alt="Header Logo">
                 <img class="lg:hidden" src="./Icons/Leaf.png" alt="Header Logo">
+                <!-- Menu Icon for Small screen -->
                 <img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon">
                 <!-- Middle Buttons -->
                 <div class="hidden md:flex md:gap-8">
@@ -50,7 +51,7 @@
                <div class="hidden md:flex md:gap-4 md:items-center">
                 <a href=""><img src="./Icons/Search Icon.png" alt="Search Icon"></a>
                 <a href=""><img src="./Icons/Cart Icon.png" alt="Cart Icon"></a>
-                <!-- Right Buttons -->
+                <!-- Login & Register Buttons -->
                 <button class="text-black md:text-base lg:text-xl md:px-5 md:py-2 lg:px-[29px] lg:py-[9px] border border-[#179800] rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Login</button>
                 <button class="text-white md:text-base lg:text-xl md:px-5 md:py-2 lg:px-[30px] lg:py-[10px] bg-[#179800] rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-[#179800] hover:border hover:border-[#179800] hover:lg:px-[29px] hover:lg:py-[9px]">Register</button>
                </div>
@@ -58,18 +59,51 @@
         </nav>
         
         <!-- Banner -->
-        <section style="background: linear-gradient(180deg, #FFF 0%, #EFEBE3 100%);">
-            <div class="bg-cover bg-center my-12 md:my-20 lg:my-28">
+        <section class="" style="background: linear-gradient(180deg, #FFF 0%, #EFEBE3 100%);">
+            <div class="max-w-[1030px] mx-auto bg-cover bg-center my-12 md:my-20 lg:my-28">
+                <!-- Banner Title -->
                 <div class="px-8 mx-auto">
                     <h1 class="text-black text-center text-[32px] md:text-5xl lg:text-[56px] font-semibold">Freshness <span class="text-[var(--primary)]">You Can<br>Count</span> On, Prices You’ll Love!</h1>
-                    <p class="md:max-w-[800px] mx-auto text-black text-base md:text-lg lg:text-xl text-center p-4 md:p-6 lg:p-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                    <!-- Banner Description -->
+                    <p class="md:max-w-[800px] mx-auto text-black opacity-80 text-base md:text-lg lg:text-xl text-center p-4 md:p-6 lg:p-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
                 </div>
+                <!-- Banner Image -->
                 <div class="flex justify-center"><img src="./Images/hero-vegetables.png" alt=""></div>
             </div>
         </section>
     </header>
-    <main>
-        
+    <main class="sora">
+        <!-- Services section -->
+        <section class="max-w-[1320px] mx-auto mb-12 md:mb-16 lg:mb-32">
+            <h3 class="pl-2 text-[var(--primary)] font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-12">Services</h3>
+            <!-- Card Container -->
+            <div class="px-[18px] md:px-5 lg:px-0 grid md:grid-cols-3 gap-[10px] md:gap-6">
+                <!-- Card 1 -->
+                <div class="flex flex-col justify-center items-center rounded-2xl bg-[var(--secondary)] px-6 md:px-7 lg:px-8">
+                    <div>
+                        <img class="max-w-full my-6 md:my-7 bg-white rounded-full p-4 md:p-5 lg:p-6" src="./Images/service.png" alt="24/7 Icon">
+                    </div>
+                    <h4 class="text-center text-xl md:text-2xl font-semibold">24/7 Services</h4>
+                    <p class="text-black opacity-70 mt-3 mb-8 lg:mb-8 text-center text-base md:text-lg lg:text-xl">Fresh, high-quality vegetables delivered daily. Affordable prices, fast delivery, freshness & seasonal products available.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="flex flex-col justify-center items-center rounded-2xl bg-[var(--secondary)] px-6 md:px-7 lg:px-8">
+                    <div>
+                        <img class="max-w-full my-6 md:my-7 bg-white rounded-full p-4 md:p-5 lg:p-6" src="./Images/delivery.png" alt="24/7 Icon">
+                    </div>
+                    <h4 class="text-center text-xl md:text-2xl font-semibold">Fast Delivery</h4>
+                    <p class="text-black opacity-70 mt-3 mb-8 lg:mb-8 text-center text-base md:text-lg lg:text-xl">Get your fresh vegetables delivered quickly with our fast and reliable service. Guaranteed freshness, straight to your door!</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="flex flex-col justify-center items-center rounded-2xl bg-[var(--secondary)] px-6 md:px-7 lg:px-8">
+                    <div>
+                        <img class="max-w-full my-6 md:my-7 bg-white rounded-full p-4 md:p-5 lg:p-6" src="./Images/healthy.png" alt="24/7 Icon">
+                    </div>
+                    <h4 class="text-center text-xl md:text-2xl font-semibold">Healthy Products</h4>
+                    <p class="text-black opacity-70 mt-3 mb-8 lg:mb-8 text-center text-base md:text-lg lg:text-xl">We offer fresh, organic, and high-quality vegetables to ensure a healthy lifestyle for you and your family.</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
