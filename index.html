@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
-    <link rel="shortcut icon" href="./Images/Leaf.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Icons/Leaf.png" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,31 +32,44 @@
   </head>
 <body>
     <!-- Header -->
-    <header class="sora max-w-[1320px] mx-auto">
+    <header class="sora">
         <!-- Navbar -->
-        <nav class="flex items-center justify-between  md:m-6 p-4 md:p-0 border border-[#179800] md:border-0">
-            <!-- Logos -->
-            <img class="hidden lg:block" src="./Images/logo-header.png" alt="Header Logo">
-            <img class="lg:hidden" src="./Icons/Leaf.png" alt="Header Logo">
-            <img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon">
-            <!-- Middle Buttons -->
-            <div class="hidden md:flex md:gap-8">
-                <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Products</a>
-                <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Services</a>
-                <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Contact Us</a>
-            </div>
-            <!-- Right Buttons -->
-           <div class="hidden md:flex md:gap-4 md:items-center">
-            <a href=""><img src="./Icons/Search Icon.png" alt="Search Icon"></a>
-            <a href=""><img src="./Icons/Cart Icon.png" alt="Cart Icon"></a>
-            <button class="text-black md:text-base lg:text-xl md:px-5 md:py-2 lg:px-[29px] lg:py-[9px] border border-[#179800] rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Login</button>
-            <button class="text-white md:text-base lg:text-xl md:px-5 md:py-2 lg:px-[30px] lg:py-[10px] bg-[#179800] rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-[#179800] hover:border hover:border-[#179800] hover:lg:px-[29px] hover:lg:py-[9px]">Register</button>
-           </div>
+        <nav class="max-w-[1320px] mx-auto">
+            <section class="flex items-center justify-between md:m-6 p-4 md:p-0 border border-[#179800] md:border-0">
+                <!-- Logos -->
+                <img class="hidden lg:block" src="./Images/logo-header.png" alt="Header Logo">
+                <img class="lg:hidden" src="./Icons/Leaf.png" alt="Header Logo">
+                <img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon">
+                <!-- Middle Buttons -->
+                <div class="hidden md:flex md:gap-8">
+                    <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Products</a>
+                    <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Services</a>
+                    <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Contact Us</a>
+                </div>
+                <!-- Search & Cart Icons -->
+               <div class="hidden md:flex md:gap-4 md:items-center">
+                <a href=""><img src="./Icons/Search Icon.png" alt="Search Icon"></a>
+                <a href=""><img src="./Icons/Cart Icon.png" alt="Cart Icon"></a>
+                <!-- Right Buttons -->
+                <button class="text-black md:text-base lg:text-xl md:px-5 md:py-2 lg:px-[29px] lg:py-[9px] border border-[#179800] rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Login</button>
+                <button class="text-white md:text-base lg:text-xl md:px-5 md:py-2 lg:px-[30px] lg:py-[10px] bg-[#179800] rounded-lg transition duration-300 ease-in-out hover:bg-white hover:text-[#179800] hover:border hover:border-[#179800] hover:lg:px-[29px] hover:lg:py-[9px]">Register</button>
+               </div>
+            </section>
         </nav>
- 
+        
         <!-- Banner -->
-        <section class="">
+        <section style="background: linear-gradient(180deg, #FFF 0%, #EFEBE3 100%);">
+            <div class="bg-cover bg-center my-12 md:my-20 lg:my-28">
+                <div class="px-8 mx-auto">
+                    <h1 class="text-black text-center text-[32px] md:text-5xl lg:text-[56px] font-semibold">Freshness <span class="text-[var(--primary)]">You Can<br>Count</span> On, Prices You’ll Love!</h1>
+                    <p class="md:max-w-[800px] mx-auto text-black text-base md:text-lg lg:text-xl text-center p-4 md:p-6 lg:p-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                </div>
+                <div class="flex justify-center"><img src="./Images/hero-vegetables.png" alt=""></div>
+            </div>
         </section>
     </header>
+    <main>
+        
+    </main>
 </body>
 </html>
