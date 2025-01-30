@@ -39,7 +39,7 @@
                 <!-- Logos -->
                 <img class="hidden lg:block" src="./Images/logo-header.png" alt="Header Logo">
                 <img class="lg:hidden" src="./Icons/Leaf.png" alt="Header Logo">
-                <!-- Menu Icon for Small screen -->
+                <!-- Menu Icon for Smaller screen -->
                 <img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon">
                 <!-- Middle Buttons -->
                 <div class="hidden md:flex md:gap-8">
@@ -75,6 +75,7 @@
     <main class="sora">
         <!-- Services section -->
         <section class="max-w-[1320px] mx-auto mb-12 md:mb-16 lg:mb-32">
+            <!-- Title -->
             <h3 class="pl-2 text-[var(--primary)] font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-12">Services</h3>
             <!-- Card Container -->
             <div class="px-[18px] md:px-5 lg:px-0 grid md:grid-cols-3 gap-3 md:gap-6">
@@ -107,16 +108,176 @@
 
         <!-- Popular Products Section -->
         <section class="bg-[var(--secondary)]">
-            <div class="max-w-[1320px] mx-auto pt-12 md:pt-16 lg:pt-32 mb-12 md:mb-16 lg:mb-32">
+            <div class="max-w-[1320px] mx-auto pt-12 md:pt-16 lg:pt-32 pb-12 md:pb-16 lg:pb-32 mb-12 md:mb-16 lg:mb-32">
+                <!-- Title -->
                 <h3 class="pl-2 text-[var(--primary)] font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-12">Popular Products</h3>
+                <!-- Vegetables Cards -->
+                <div class="px-2 lg:px-0 lg:flex lg:items-center lg:gap-6">
                 <!-- Green Card -->
-                <div class="rounded-lg" style="background: linear-gradient(135deg, #26eb04 0%, #EFEBE3 100%);">
+                <div class="relative h-[360px] lg:h-[400px] lg:w-[424px] rounded-lg shadow-lg hover:shadow-2xl" style="background: linear-gradient(135deg, #26eb04 0%, #EFEBE3 100%);">
                     <div class="pl-5 md:pl-6 pt-6 md:pt-7 lg:pt-8">
                         <h2 class="pop text-white text-xl md:text-2xl lg:text-3xl">30% off</h2>
-                        <p class="text-black text-xs md:text-sm lg:text-base my-3 md:my-4 lg:my-5">Discover a world of treats, toys, and essentials handpicked for you.</p>
-                        <button class="text-black md:text-base lg:text-xl md:px-5 md:py-2 lg:px-8 lg:py-[9px] bg-white rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Buy Now</button>
+                        <p class="text-black text-xs md:text-sm lg:text-base my-3 md:my-4 lg:my-5">Discover a world of treats, toys, and <br>essentials handpicked for you.</p>
+                        <button class="text-black text-xs md:text-base lg:text-xl px-3 md:px-5 py-1 md:py-2 lg:px-8 lg:py-[9px] bg-white rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Buy Now</button>
                     </div>
-                    <img src="./Images/vegetable-offer.png" alt="Vegetable Pic">
+                    <img class="absolute right-0 bottom-0 max-w-228 lg:max-w-full" src="./Images/vegetable-offer.png" alt="Vegetable Pic">
+                </div>
+                <!-- Small Cards Container -->
+                <div class="mt-6 lg:mt-0 grid grid-cols-2 gap-[14px] md:grid-cols-3 md:gap-4 lg:gap-6">
+                    <!-- Card 1 -->
+                    <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/Onions.png" alt="Onions Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Onions 1 KG</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$39.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/Tomatos.png" alt="Tomato Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Tomato 500g</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$29.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/Potatos.png" alt="Potatos Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Potatos 1 KG</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$49.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="flex gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white items-center">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/cucumber.png" alt="Cucumber Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Cucumber 1 KG</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$25.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="flex gap-2 items-center md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/Carrots.png" alt="Carrotsr Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Carrots 1 KG</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$45.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/garlics.png" alt="Garlics Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Garlics 500g</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$20.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/Onions.png" alt="Onions Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Onions 2 KG</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$75.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/Tomatos.png" alt="Tomato Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Tomato 1 KG</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$29.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md" src="./Images/Potatos.png" alt="Potatos Pic">
+                        <div>
+                            <div class="flex gap-2 md:gap-[10px]">
+                                <div><img src="./Icons/Star Icon.png" alt="Star icon"></div>
+                                <p class="text-[10px] md:text-sm lg:text-base">4.5</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs md:text-lg lg:text-xl font-medium md:my-1">Potatos 2 KG</h4>
+                                <p class="text-[10px] md:text-sm lg:text-base">$95.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Section -->
+        <section class="max-w-[1320px] mx-auto">
+            <!-- Title -->
+            <h3 class="pl-2 text-[var(--primary)] font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-12">Arrivals & Offers</h3>
+            <!-- Offer Cards -->
+            <div class="md:flex md:gap-5 px-3 md:px-0 mb-12 md:mb-20 lg:mb-40">
+                <!-- Green Card -->
+                <div class="flex-[3] bg-[#115414] rounded-xl md:rounded-3xl flex items-center justify-between lg:gap-12 mb-4 md:mb-0 shadow-xl hover:shadow-2xl">
+                    <div class="py-[26px] md:py-8 lg:py-11 pl-[18px] md:pl-6 lg:pl-[40px]">
+                        <img src="./Images/dawat-logo.png" alt="Dawat Logo">
+                        <button class="pop md:tracking-wide text-white px-[18px] md:px-7 lg:px-9 py-2 md:py-3 lg:py-[14px] bg-[#63B760] rounded-lg md:rounded-xl my-[18px] md:my-6 lg:my-8 hover:shadow-lg transition duration-300 ease-in-out hover:bg-[#498448]">Cook Exotic Dishes</button>
+                        <h5 class="pop text-white text-[22px] md:text-3xl lg:text-[40px] font-medium">UP to <span class="font-semibold">20% OFF</span></h5>
+                    </div>
+                    <img class="pt-2 lg:pt-3" src="./Images/dawat-mock-up.png" alt="">
+                </div>
+                <!-- Blue Card -->
+                <div class="flex-[2] bg-[#102861] rounded-xl md:rounded-3xl flex items-center justify-between lg:gap-1 shadow-xl hover:shadow-2xl">
+                    <div class="py-[26px] md:py-7 lg:py-8 pl-[18px] md:pl-5 lg:pl-8">
+                        <img src="./Images/india-gate-logo.png" alt="Dawat Logo">
+                        <button class="pop md:tracking-wide text-white px-[18px] md:px-7 lg:px-9 py-2 md:py-3 lg:py-[14px] bg-[#2A4D97] rounded-lg md:rounded-xl my-2 md:my-3 lg:my-4 hover:shadow-lg transition duration-300 ease-in-out hover:bg-[#213869]">World's No.1 Rice</button>
+                        <h5 class="pop text-white text-[22px] md:text-3xl lg:text-[40px] font-medium">UP to <span class="font-semibold">40% OFF</span></h5>
+                    </div>
+                    <img class="pt-2 pr-1 md:pr-2 lg:pt-3" src="./Images/india-gate-mock-up.png" alt="">
                 </div>
             </div>
         </section>
