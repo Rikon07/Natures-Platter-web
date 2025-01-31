@@ -28,6 +28,10 @@
     .sora{
         font-family: "Sora", serif;
     }
+    @keyframes bounce-scale {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-55px) scale(1.05); }
+  }
     </style>
   </head>
 <body>
@@ -69,7 +73,7 @@
                     <p class="md:max-w-[800px] mx-auto text-black opacity-80 text-base md:text-lg lg:text-xl text-center p-4 md:p-6 lg:p-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
                 </div>
                 <!-- Banner Image -->
-                <div class="flex justify-center"><img src="./Images/hero-vegetables.png" alt=""></div>
+                <div class="animate-[bounce-scale_3s_infinite] flex justify-center"><img src="./Images/hero-vegetables.png" alt=""></div>
             </div>
         </section>
     </header>
