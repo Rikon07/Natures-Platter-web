@@ -30,7 +30,7 @@
     }
     @keyframes bounce-scale {
     0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-55px) scale(1.05); }
+    50% { transform: translateY(-65px) scale(0.90); }
   }
     </style>
   </head>
@@ -44,7 +44,15 @@
                 <img class="hidden lg:block" src="./Images/logo-header.png" alt="Header Logo">
                 <img class="lg:hidden" src="./Icons/Leaf.png" alt="Header Logo">
                 <!-- Menu Icon for Smaller screen -->
-                <img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon">
+                <!-- <img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon"> -->
+                <div class="dropdown dropdown-left md:hidden">
+                    <div tabindex="0" role="button" class=""><img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon"></div>
+                    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                      <li><a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Products</a></li>
+                      <li><a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Services</a></li>
+                      <li><a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
                 <!-- Middle Links -->
                 <div class="hidden md:flex md:gap-8">
                     <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Products</a>
@@ -73,7 +81,7 @@
                     <p class="md:max-w-[800px] mx-auto text-black opacity-80 text-base md:text-lg lg:text-xl text-center p-4 md:p-6 lg:p-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
                 </div>
                 <!-- Banner Image -->
-                <div class="animate-[bounce-scale_3s_infinite] flex justify-center"><img src="./Images/hero-vegetables.png" alt=""></div>
+                <div class="animate-[bounce-scale_3s_infinite] flex justify-center max-w-full"><img src="./Images/hero-vegetables.png" alt=""></div>
             </div>
         </section>
     </header>
@@ -293,6 +301,7 @@
             </div>
         </section>
 
+        
         <!-- Grocery News Section -->
         <section class="relative bg-[var(--primary)] min-h-[260px] md:min-h-[160px] lg:min-h-[220px]">
             <div class="absolute z-1 left-0 right-0 bottom-0 px-4 md:px-5">
