@@ -41,14 +41,15 @@
                 <img class="lg:hidden" src="./Icons/Leaf.png" alt="Header Logo">
                 <!-- Menu Icon for Smaller screen -->
                 <img class="md:hidden" src="./Icons/Menu Bar.png" alt="Menu Icon">
-                <!-- Middle Buttons -->
+                <!-- Middle Links -->
                 <div class="hidden md:flex md:gap-8">
                     <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Products</a>
                     <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Services</a>
                     <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Contact Us</a>
                 </div>
-                <!-- Search & Cart Icons -->
+                <!-- Right Side Links & Buttons -->
                <div class="hidden md:flex md:gap-4 md:items-center">
+                <!-- Search & Cart Icons -->
                 <a href=""><img src="./Icons/Search Icon.png" alt="Search Icon"></a>
                 <a href=""><img src="./Icons/Cart Icon.png" alt="Cart Icon"></a>
                 <!-- Login & Register Buttons -->
@@ -72,7 +73,9 @@
             </div>
         </section>
     </header>
+
     <main class="sora">
+
         <!-- Services section -->
         <section class="max-w-[1320px] mx-auto mb-12 md:mb-16 lg:mb-32">
             <!-- Title -->
@@ -81,9 +84,9 @@
             <div class="px-[18px] md:px-5 lg:px-0 grid md:grid-cols-3 gap-3 md:gap-6">
                 <!-- Card 1 -->
                 <div class="flex flex-col justify-center items-center rounded-2xl bg-[var(--secondary)] px-6 md:px-7 lg:px-8 shadow-lg hover:shadow-2xl">
-                    <div>
-                        <img class="max-w-full my-6 md:my-7 bg-white rounded-full p-4 md:p-5 lg:p-6" src="./Images/service.png" alt="24/7 Icon">
-                    </div>
+                    <div class="bg-white rounded-full p-4 md:p-5 lg:p-6 my-6 md:my-7 flex justify-center items-center">
+                        <img class="max-w-full" src="./Images/service.png" alt="24/7 Icon">
+                    </div>                    
                     <h4 class="text-center text-xl md:text-2xl font-semibold">24/7 Services</h4>
                     <p class="text-black opacity-70 mt-3 mb-8 lg:mb-8 text-center text-base md:text-lg lg:text-xl">Fresh, high-quality vegetables delivered daily. Affordable prices, fast delivery, freshness & seasonal products available.</p>
                 </div>
@@ -117,7 +120,7 @@
                 <div class="relative h-[360px] lg:h-[400px] lg:w-[424px] rounded-lg shadow-lg hover:shadow-2xl" style="background: linear-gradient(135deg, #26eb04 0%, #EFEBE3 100%);">
                     <div class="pl-5 md:pl-6 pt-6 md:pt-7 lg:pt-8">
                         <h2 class="pop text-white text-xl md:text-2xl lg:text-3xl">30% off</h2>
-                        <p class="text-black text-xs md:text-sm lg:text-base my-3 md:my-4 lg:my-5">Discover a world of treats, toys, and <br>essentials handpicked for you.</p>
+                        <p class="text-black opacity-75 text-xs md:text-sm lg:text-base my-3 md:my-4 lg:my-5">Discover a world of treats, toys, and <br>essentials handpicked for you.</p>
                         <button class="text-black text-xs md:text-base lg:text-xl px-3 md:px-5 py-1 md:py-2 lg:px-8 lg:py-[9px] bg-white rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Buy Now</button>
                     </div>
                     <img class="absolute right-0 bottom-0 max-w-228 lg:max-w-full" src="./Images/vegetable-offer.png" alt="Vegetable Pic">
@@ -256,7 +259,7 @@
         </section>
 
         <!-- Offers Section -->
-        <section class="max-w-[1320px] mx-auto">
+        <section class="max-w-[1320px] mx-auto mb-[320px] md:mb-[200px] lg:mb-[390px]">
             <!-- Title -->
             <h3 class="pl-2 text-[var(--primary)] font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-12">Arrivals & Offers</h3>
             <!-- Offer Cards -->
@@ -287,33 +290,45 @@
         </section>
 
         <!-- Grocery News Section -->
-        <section class="bg-[var(--primary)]">
-            <div class="max-w-[1320px] mx-auto bg-[var(--secondary)] flex flex-col md:flex-row justify-center md:justify-between items-center md:gap-12 lg:gap-28 md:px-7 md:py-6 lg:px-[102px] lg:py-[54px] rounded-3xl">
-                <div><img class="max-w-full" src="./Images/vegetable-busket.png" alt="Busket Image"></div>
-                <div class="flex flex-col gap-4 md:gap-6 lg:gap-9 justify-center items-center">
-                    <h2 class="text-[var(--primary)] text-center lg:text-black text-[22px] md:text-7 lg:text-[32px] font-bold">Get Grocery News!</h2>
-                    <p class="text-center text-black text-base md:text-lg lg:text-xl">Exclusive training tips, ticks, product deals and more.</p>
-                    <input type="email" placeholder="Enter email...." class="bg-white h-[42px] md:h-[54px] lg:h-[68px] focus:outline-none shadow-lg rounded-md pl-3 md:pl-4 md:pr-48 lg:pr-72 placeholder:text-sm md:placeholder:text-base ">
-                    <div>
-                        <button class="text-white text-sm md:text-base bg-[var(--primary)] rounded-r-md md:rounded-lg lg:text-xl px-6 py-2 md:px-7 md:py-2 lg:px-[30px] lg:py-[10px] transition duration-300 ease-in-out hover:bg-white hover:text-[#179800] hover:border hover:border-[#179800] hover:lg:px-[29px] hover:lg:py-[9px]">Subscribe</button>
+        <section class="relative bg-[var(--primary)] min-h-[260px] md:min-h-[160px] lg:min-h-[220px]">
+            <div class="absolute z-1 left-0 right-0 bottom-0 px-4 md:px-5">
+                <div class="max-w-[1320px] mx-auto bg-[var(--secondary)] flex flex-col md:flex-row justify-center md:justify-between items-center md:gap-12 lg:gap-28 md:px-7 py-4 md:py-6 lg:px-[122px] lg:py-[54px] rounded-3xl">
+                    <!-- Basket -->
+                    <div><img class="max-w-full" src="./Images/vegetable-busket.png" alt="Basket Image"></div>
+                    <!-- Description & Info Field -->
+                    <div class="flex flex-col gap-4 md:gap-6 lg:gap-9 justify-center items-center">
+                        <h2 class="text-[var(--primary)] text-center lg:text-black text-[22px] md:text-7 lg:text-[32px] font-bold">Get Grocery News!</h2>
+                        <p class="text-center opacity-80 text-black text-base md:text-lg lg:text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                        <!-- E-mail field -->
+                        <input type="email" placeholder="Enter email...." class="bg-white h-[42px] md:h-[54px] lg:h-[68px] focus:outline-none shadow-lg rounded-md pl-3 md:pl-4 md:pr-48 lg:pr-72 placeholder:text-sm md:placeholder:text-base ">
+                        <!-- Grocery Button -->
+                        <div>
+                            <button class="text-white text-sm md:text-base bg-[var(--primary)] rounded-r-md md:rounded-lg lg:text-xl px-6 py-2 md:px-7 md:py-2 lg:px-[30px] lg:py-[10px] transition duration-300 ease-in-out hover:bg-white hover:text-[#179800] hover:border hover:border-[#179800] hover:lg:px-[29px] hover:lg:py-[9px] hover:shadow-2xl">Subscribe</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
+
+    <!-- Footer Section -->
     <footer class="sora bg-[var(--primary)]">
         <section class="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-3 py-12 md:py-16 lg:py-32 md:justify-items-center md:items-center px-5 xl:px-0">
+            <!-- Logo & Description -->
             <div>
-                <div>
+                <div class="mb-3 md:mb-4">
                     <img src="./Images/logo-footer.png" alt="Logo">
                 </div>
                 <p class="text-white opacity-70 text-base md:text-lg lg:text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
             </div>
+            <!-- Links -->
             <div class="flex flex-col gap-5 md:gap-6 lg:gap-8">
                 <a class="md:text-base lg:text-xl text-white transition duration-300 ease-in-out hover:underline hover:shadow-lg" href="#">Products</a>
                 <a class="md:text-base lg:text-xl text-white transition duration-300 ease-in-out hover:underline hover:shadow-lg" href="#">Services</a>
                 <a class="md:text-base lg:text-xl text-white transition duration-300 ease-in-out hover:underline hover:shadow-lg" href="#">Contact Us</a>
             </div>
+            <!-- Social Media Icons -->
             <div>
                 <h6 class="text-[var(--secondary)] text-sm md:text-base mb-4">Follow Us</h6>
                 <div class="flex gap-5">
