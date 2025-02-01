@@ -31,10 +31,27 @@
     .sora{
         font-family: "Sora", serif;
     }
+    .anime{
+        background: linear-gradient(to right, #179800, #FFC83D, #EFEBE3);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-gradient 2.5s linear infinite;
+    }
+    @keyframes animate-gradient{
+        to {
+            background-position: 200%;
+        }
+    }
     @keyframes bounce-scale {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-65px) scale(0.90); }
-  }
+        0%, 100% { 
+            transform: translateY(0) scale(1); 
+        }
+        50% { 
+            transform: translateY(-65px) scale(0.90); 
+        }
+    }
     </style>
 </head>
 
@@ -67,14 +84,14 @@
                 <!-- Middle Links -->
                 <div class="hidden md:flex md:gap-8">
                     <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Products</a>
-                    <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Services</a>
+                    <a class="md:text-base lg:text-xl text-black hover:text-[#FFC83D]" href="#">Services</a>
                     <a class="md:text-base lg:text-xl text-black hover:text-[var(--primary)]" href="#">Contact Us</a>
                 </div>
                 <!-- Right Side Links & Buttons -->
                 <div class="hidden md:flex md:gap-4 md:items-center">
                     <!-- Search & Cart Icons -->
-                    <a class="hover:shadow-lg hover:scale-95" href=""><img src="./Icons/Search Icon.png" alt="Search Icon"></a>
-                    <a class="hover:shadow-lg hover:scale-95" href=""><img src="./Icons/Cart Icon.png" alt="Cart Icon"></a>
+                    <a class="hover:scale-95" href=""><img src="./Icons/Search Icon.png" alt="Search Icon"></a>
+                    <a class="hover:scale-95" href=""><img src="./Icons/Cart Icon.png" alt="Cart Icon"></a>
                     <!-- Login & Register Buttons -->
                     <button
                         class="text-black md:text-base lg:text-xl md:px-5 md:py-2 lg:px-[29px] lg:py-[9px] border border-[#179800] rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Login</button>
@@ -90,11 +107,11 @@
                 <!-- Banner Title -->
                 <div class="px-8 mx-auto">
                     <h1 class="text-black text-center text-[32px] md:text-5xl lg:text-[56px] font-semibold">Freshness
-                        <span class="text-[var(--primary)]">You Can<br>Count</span> On, Prices You’ll Love!</h1>
+                        <span class="anime">You Can<br>Count</span> On, Prices You’ll Love!</h1>
                     <!-- Banner Description -->
                     <p
                         class="md:max-w-[800px] mx-auto text-black opacity-80 text-base md:text-lg lg:text-xl text-center p-4 md:p-6 lg:p-8">
-                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got
+                        Shop your daily essentials at unbeatable prices. From fresh products to pantry staples, we’ve got
                         you covered every day!</p>
                 </div>
                 <!-- Banner Image -->
@@ -169,8 +186,8 @@
                             <p class="text-black opacity-75 text-xs md:text-sm lg:text-base my-3 md:my-4 lg:my-5">
                                 Discover a world of treats, toys, and <br>essentials handpicked for you.</p>
                             <button
-                                class="text-black text-xs md:text-base lg:text-xl px-3 md:px-5 py-1 md:py-2 lg:px-8 lg:py-[9px] bg-white rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white">Buy
-                                Now</button>
+                                class="text-black text-xs md:text-base lg:text-xl px-3 md:px-5 py-1 md:py-2 lg:px-8 lg:py-[9px] bg-white rounded-[8px] transition duration-300 ease-in-out hover:bg-[#179800] hover:text-white flex gap-2 items-center group">
+                                <p>Buy Now</p> <i class="group-hover:animate-spin duration-300 fa-solid fa-tag"></i></button>
                         </div>
                         <img class="absolute right-0 bottom-0 max-w-228 lg:max-w-full"
                             src="./Images/vegetable-offer.png" alt="Vegetable Pic">
@@ -178,7 +195,7 @@
                     <!-- Small Cards Container -->
                     <div class="mt-6 lg:mt-0 grid grid-cols-2 gap-[14px] md:grid-cols-3 md:gap-4 lg:gap-6">
                         <!-- Card 1 -->
-                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/Onions.png" alt="Onions Pic">
                             <div>
@@ -193,7 +210,7 @@
                             </div>
                         </div>
                         <!-- Card 2 -->
-                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/Tomatos.png" alt="Tomato Pic">
                             <div>
@@ -208,7 +225,7 @@
                             </div>
                         </div>
                         <!-- Card 3 -->
-                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/Potatos.png" alt="Potatos Pic">
                             <div>
@@ -223,7 +240,7 @@
                             </div>
                         </div>
                         <!-- Card 4 -->
-                        <div class="flex gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white items-center">
+                        <div class="flex gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white items-center shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/cucumber.png" alt="Cucumber Pic">
                             <div>
@@ -238,7 +255,7 @@
                             </div>
                         </div>
                         <!-- Card 5 -->
-                        <div class="flex gap-2 items-center md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex gap-2 items-center md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/Carrots.png" alt="Carrotsr Pic">
                             <div>
@@ -253,7 +270,7 @@
                             </div>
                         </div>
                         <!-- Card 6 -->
-                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/garlics.png" alt="Garlics Pic">
                             <div>
@@ -268,7 +285,7 @@
                             </div>
                         </div>
                         <!-- Card 7 -->
-                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/Onions.png" alt="Onions Pic">
                             <div>
@@ -283,7 +300,7 @@
                             </div>
                         </div>
                         <!-- Card 8 -->
-                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/Tomatos.png" alt="Tomato Pic">
                             <div>
@@ -298,7 +315,7 @@
                             </div>
                         </div>
                         <!-- Card 9 -->
-                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white">
+                        <div class="flex items-center gap-2 md:gap-3 p-2 md:p-4 rounded-[10px] bg-white shadow-md">
                             <img class="max-w-[70px] max-h-[70px] bg-[var(--secondary)] rounded-md"
                                 src="./Images/Potatos.png" alt="Potatos Pic">
                             <div>
@@ -359,7 +376,7 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="bg-[#EFEBE3] py-10 mb-[320px] md:mb-[200px] lg:mb-[390px]">
+        <section class="bg-[#EFEBE3] py-10 mb-[340px] md:mb-[240px] lg:mb-[350px]">
             <div class="container max-w-[1320px] mx-auto px-4">
                 <h2
                     class="pl-2 text-[var(--primary)] font-semibold text-2xl md:text-3xl lg:text-4xl mb-8 md:mb-10 lg:mb-12">
@@ -454,7 +471,7 @@
                         <!-- Grocery Button -->
                         <div>
                             <button
-                                class="text-white text-sm md:text-base bg-[var(--primary)] rounded-r-md md:rounded-lg lg:text-xl px-6 py-2 md:px-7 md:py-2 lg:px-[30px] lg:py-[10px] transition duration-300 ease-in-out hover:bg-white hover:text-[#179800] hover:border hover:border-[#179800] hover:lg:px-[29px] hover:lg:py-[9px] hover:shadow-2xl">Subscribe</button>
+                                class="text-white text-sm md:text-base bg-[var(--primary)] rounded-md md:rounded-lg lg:text-xl px-6 py-2 md:px-7 md:py-2 lg:px-[30px] lg:py-[10px] transition duration-300 ease-in-out hover:bg-white hover:text-[#179800] hover:border hover:border-[#179800] hover:lg:px-[29px] hover:lg:py-[9px] hover:shadow-2xl">Subscribe</button>
                         </div>
                     </div>
                 </div>
